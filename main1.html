@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+        .day {
+            padding: 1rem;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+    </style>
+
+
+</head>
+
+<body class="bg-gradient-to-r from-purple-300 to-blue-300 text-white font-sans h-screen flex items-center justify-center">
+
+    <div class="w-1/4 h-3/4 bg-white bg-opacity-20 rounded-lg shadow border-2 border-white border-opacity-20 backdrop-blur-xl">
+        <div class="pb-40">
+           <a href="month.html">
+            <button class="bg-purple-800 hover:bg-purple-500 text-white font-bold py-2 px-4 rounded">
+                Month
+            </button>
+        </a>
+        
+            <a href="week.html">
+            <button class="bg-purple-800 hover:bg-purple-500 text-white font-bold py-2 px-4 rounded">
+                Week
+            </button></a>
+            </div>
+    
+            <div class="pb-24 text-center pl-12">
+            <h1 class="text-black font-semibold text-3xl">Timetable</h1>
+            </div>
+            <div class="w-48 h-48 mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+                <div class="p-6 align-middle">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-2">Hello!</h2>
+                    <p class="text-sm font-semibold text-gray-500">October 7, 2023</p>
+                    <h1 class="text-4xl font-bold text-gray-900 pt-5">10</h1>
+                    <p class="text-gray-600">Tasks</p>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+
+
+    <div class="container mx-auto p-10 pt-10">
+        <h1 class="text-2xl font-semibold mb-4">Weekly Task List</h1>
+
+        <!-- Week View -->
+        <div class="bg-white p-4 rounded-lg shadow-lg">
+            <!-- Days as rows -->
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Monday -->
+                <div class="border p-4 text-black">
+                    <h2 class="text-lg font-semibold mb-2 text-black">Monday</h2>
+                    <div class="border-t pt-2">
+                    
+                        <ul>
+                            <li class="flex items-center mb-2">
+                    
+                            </li>
+                            <div class="w-1/2 mx-auto mt-4">
+                                <label for="inputField" class="block text-gray-700 text-sm font-bold mb-2">Task 1:</label>
+                                <input type="text" id="inputField" name="inputField" class="form-input w-full rounded-md shadow-sm">
+                            </div>  
+                            <li class="flex items-center mb-2">
+                                <div class="w-1/2 mx-auto mt-4">
+                                    <label for="inputField" class="block text-gray-700 text-sm font-bold mb-2">Task 2:</label>
+                                    <input type="text" id="inputField" name="inputField" class="form-input w-full rounded-md shadow-sm">
+                                </div>   
+                        
+                            </li>
+                            <!-- Add more tasks as needed -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tuesday -->
+                <div class="border p-4 text-black">
+                    <h2 class="text-lg font-semibold mb-2">Tuesday</h2>
+                    <div class="border-t pt-2">
+                        <ul>
+                            <li class="flex items-center mb-2">
+                                <span class="bg-yellow-500 w-2 h-2 mr-2"></span>
+                                Task 3
+                            </li>
+                            <!-- Add more tasks as needed -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Wednesday -->
+                <div class="border p-4 text-black">
+                    <h2 class="text-lg font-semibold mb-2">Wednesday</h2>
+                    <div class="border-t pt-2">
+                        <ul>
+                            <li class="flex items-center mb-2">
+                        
+                            </li>
+                            <div class="w-1/2 mx-auto mt-4">
+                                <label for="inputField" class="block text-gray-700 text-sm font-bold mb-2">Task 1:</label>
+                                <input type="text" id="inputField" name="inputField" class="form-input w-full rounded-md shadow-sm">
+                            </div>  
+                            <li class="flex items-center mb-2">
+                                <div class="w-1/2 mx-auto mt-4">
+                                    <label for="inputField" class="block text-gray-700 text-sm font-bold mb-2">Task 2:</label>
+                                    <input type="text" id="inputField" name="inputField" class="form-input w-full rounded-md shadow-sm">
+                                </div>  
+                                
+                            </li>
+                            <!-- Add ore tasks as needed -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Thursday -->
+                <div class="border p-4 text-black">
+                    <h2 class="text-lg font-semibold mb-2">Thursday</h2>
+                    <div class="border-t pt-2">
+                        <ul>
+                            <li class="flex items-center mb-2">
+                                <span class="bg-green-500 w-2 h-2 mr-2"></span>
+                                Task 1
+                            </li>
+                            <li class="flex items-center mb-2">
+                                <span class="bg-red-500 w-2 h-2 mr-2"></span>
+                                Task 2
+                            </li>
+                            <!-- Add more tasks as needed -->
+                        </ul>
+                    </div>
+                </div>
+                <!--Friday -->
+                <div class="border p-4 text-black">
+                    <h2 class="text-lg font-semibold mb-2">Friday</h2>
+                    <div class="border-t pt-2">
+                        <ul>
+                            <li class="flex items-center mb-2">
+                                <span class="bg-green-500 w-2 h-2 mr-2"></span>
+                                Task 1
+                            </li>
+                            <li class="flex items-center mb-2">
+                                <span class="bg-red-500 w-2 h-2 mr-2"></span>
+                                Task 2
+                            </li>
+                            <!-- Add more tasks as needed -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- Saturday -->
+                <div class="border p-4 text-black">
+                    <h2 class="text-lg font-semibold mb-2">Saturday</h2>
+                    <div class="border-t pt-2">
+                        <ul>
+                            <li class="flex items-center mb-2">
+                                <span class="bg-green-500 w-2 h-2 mr-2"></span>
+                                Task 1
+                            </li>
+                            <li class="flex items-center mb-2">
+                                <span class="bg-red-500 w-2 h-2 mr-2"></span>
+                                Task 2
+                            </li>
+                            <!-- Add more tasks as needed -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- Sunday -->
+                <div class="border p-4 text-black">
+                    <h2 class="text-lg font-semibold mb-2 text-black">Sunday</h2>
+                    <div class="border-t pt-2">
+                        <ul>
+                            <li class="flex items-center mb-2">
+                                <span class="bg-green-500 w-2 h-2 mr-2"></span>
+                                Task 1
+                            </li>
+                            <li class="flex items-center mb-2">
+                                <span class="bg-red-500 w-2 h-2 mr-2"></span>
+                                Task 2
+                            </li>
+                            <!-- Add more tasks as needed -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="max-w-md mx-auto bg-purple-800 rounded-lg p-14">
+        <h1 class="text-2xl font-semibold mb-4">Calendar</h1>
+        <div class="calendar">
+            <div class="day bg-gray-200">Sun</div>
+            <div class="day bg-gray-200">Mon</div>
+            <div class="day bg-gray-200">Tue</div>
+            <div class="day bg-gray-200">Wed</div>
+            <div class="day bg-gray-200">Thu</div>
+            <div class="day bg-gray-200">Fri</div>
+            <div class="day bg-gray-200">Sat</div>
+        </div>
+    </div>
+
+    <script>
+
+        function generateCalendar() {
+            const calendarContainer = document.querySelector('.calendar');
+            const today = new Date();
+            const currentMonth = today.getMonth();
+            const daysInMonth = new Date(today.getFullYear(), currentMonth + 1, 0).getDate();
+            const firstDayOfMonth = new Date(today.getFullYear(), currentMonth, 1).getDay();
+
+            // Clear previous calendar content
+            calendarContainer.innerHTML = '';
+
+            // Generate days for the current month
+            for (let i = 0; i < daysInMonth + firstDayOfMonth; i++) {
+                const dayElement = document.createElement('div');
+                dayElement.classList.add('day', 'border');
+                if (i >= firstDayOfMonth) {
+                    const dayOfMonth = i - firstDayOfMonth + 1;
+                    dayElement.textContent = dayOfMonth;
+                }
+                calendarContainer.appendChild(dayElement);
+            }
+        }
+
+        // Call the function to generate the initial calendar
+        generateCalendar();
+    </script>
+
+
+
+</body>
+
+</html>

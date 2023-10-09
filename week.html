@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Add custom CSS classes with similar purple shades */
+        .day-monday {
+            background-color: #9561e2; /* Monday - Similar purple-500 */
+        }
+        .day-tuesday {
+            background-color: #8d5ce2; /* Tuesday - Similar purple-500 */
+        }
+        .day-wednesday {
+            background-color: #8457e2; /* Wednesday - Similar purple-500 */
+        }
+        .day-thursday {
+            background-color: #7c52e2; /* Thursday - Similar purple-500 */
+        }
+        .day-friday {
+            background-color: #744de2; /* Friday - Similar purple-500 */
+        }
+        .day-saturday {
+            background-color: #6c48e2; /* Saturday - Similar purple-500 */
+        }
+        .day-sunday {
+            background-color: #6443e2; /* Sunday - Similar purple-500 */
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-purple-300 to-blue-300 p-6">
+    <div class="container mx-auto">
+        <h1 class="text-3xl mb-4">Weekly Time Log</h1>
+        <table class="min-w-full bg-white border border-gray-300">
+            <thead>
+                <tr>
+                    <th class="px-4 py-2 border-b border-gray-300">Day</th>
+                    <th class="px-4 py-2 border-b border-gray-300">Start Time</th>
+                    <th class="px-4 py-2 border-b border-gray-300">End Time</th>
+                    <th class="px-4 py-2 border-b border-gray-300">Tasks</th>
+                    <th class="px-4 py-2 border-b border-gray-300">Repetition</th>
+                    <th class="px-4 py-2 border-b border-gray-300">Total Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="px-4 py-2 border-b border-gray-300 day-monday">Monday</td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="datetime-local" class="w-full current-time" id="mondayStartTime"></td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="datetime-local" class="w-full current-time" id="mondayEndTime"></td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="text" class="w-full" id="mondayTasks" value="Task 1"></td>
+                    <td class="px-4 py-2 border-b border-gray-300">
+                        <select class="w-full" id="mondayRepetition">
+                            <option value="Weekly">Weekly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Yearly">Yearly</option>
+                        </select>
+                    </td>
+                    <td class="px-4 py-2 border-b border-gray-300"></td>
+                </tr>
+                <tr>
+                    <td class="px-4 py-2 border-b border-gray-300 day-tuesday">Tuesday</td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="datetime-local" class="w-full current-time" id="tuesdayStartTime"></td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="datetime-local" class="w-full current-time" id="tuesdayEndTime"></td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="text" class="w-full" id="tuesdayTasks" value="Task 2"></td>
+                    <td class="px-4 py-2 border-b border-gray-300">
+                        <select class="w-full" id="tuesdayRepetition">
+                            <option value="Weekly">Weekly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Yearly">Yearly</option>
+                        </select>
+                    </td>
+                    <td class="px-4 py-2 border-b border-gray-300"></td>
+                </tr>
+                <tr>
+                    <td class="px-4 py-2 border-b border-gray-300 day-wednesday">Wednesday</td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="datetime-local" class="w-full current-time" id="wednesdayStartTime"></td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="datetime-local" class="w-full current-time" id="wednesdayEndTime"></td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="text" class="w-full" id="wednesdayTasks" value="Task 3"></td>
+                    <td class="px-4 py-2 border-b border-gray-300">
+                        <select class="w-full" id="wednesdayRepetition">
+                            <option value="Weekly">Weekly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Yearly">Yearly</option>
+                        </select>
+                    </td>
+                    <td class="px-4 py-2 border-b border-gray-300"></td>
+                </tr>
+                <tr>
+                    <td class="px-4 py-2 border-b border-gray-300 day-thursday">Thursday</td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="datetime-local" class="w-full current-time" id="thursdayStartTime"></td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="datetime-local" class="w-full current-time" id="thursdayEndTime"></td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="text" class="w-full" id="thursdayTasks" value="Task 4"></td>
+                    <td class="px-4 py-2 border-b border-gray-300">
+                        <select class="w-full" id="thursdayRepetition">
+                            <option value="Weekly">Weekly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Yearly">Yearly</option>
+                        </select>
+                    </td>
+                    <td class="px-4 py-2 border-b border-gray-300"></td>
+                </tr>
+                <tr>
+                    <td class="px-4 py-2 border-b border-gray-300 day-friday">Friday</td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="datetime-local" class="w-full current-time" id="fridayStartTime"></td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="datetime-local" class="w-full current-time" id="fridayEndTime"></td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="text" class="w-full" id="fridayTasks" value="Task 5"></td>
+                    <td class="px-4 py-2 border-b border-gray-300">
+                        <select class="w-full" id="fridayRepetition">
+                            <option value="Weekly">Weekly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Yearly">Yearly</option>
+                        </select>
+                    </td>
+                    <td class="px-4 py-2 border-b border-gray-300"></td>
+                </tr>
+                <tr>
+                    <td class="px-4 py-2 border-b border-gray-300 day-saturday">Saturday</td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="datetime-local" class="w-full current-time" id="saturdayStartTime"></td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="datetime-local" class="w-full current-time" id="saturdayEndTime"></td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="text" class="w-full" id="saturdayTasks" value="Task 6"></td>
+                    <td class="px-4 py-2 border-b border-gray-300">
+                        <select class="w-full" id="saturdayRepetition">
+                            <option value="Weekly">Weekly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Yearly">Yearly</option>
+                        </select>
+                    </td>
+                    <td class="px-4 py-2 border-b border-gray-300"></td>
+                </tr>
+                <tr>
+                    <td class="px-4 py-2 border-b border-gray-300 day-sunday">Sunday</td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="datetime-local" class="w-full current-time" id="sundayStartTime"></td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="datetime-local" class="w-full current-time" id="sundayEndTime"></td>
+                    <td class="px-4 py-2 border-b border-gray-300"><input type="text" class="w-full" id="sundayTasks" value="Task 7"></td>
+                    <td class="px-4 py-2 border-b border-gray-300">
+                        <select class="w-full" id="sundayRepetition">
+                            <option value="Weekly">Weekly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Yearly">Yearly</option>
+                        </select>
+                    </td>
+                    <td class="px-4 py-2 border-b border-gray-300"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Function to set default values to the current date and time
+        function setDefaultDateTimeInputs() {
+            const now = new Date();
+            const formattedNow = now.toISOString().slice(0, 16); // Format as YYYY-MM-DDTHH:mm
+            document.getElementById('mondayStartTime').value = formattedNow;
+            document.getElementById('mondayEndTime').value = formattedNow;
+            document.getElementById('tuesdayStartTime').value = formattedNow;
+            document.getElementById('tuesdayEndTime').value = formattedNow;
+            document.getElementById('wednesdayStartTime').value = formattedNow;
+            document.getElementById('wednesdayEndTime').value = formattedNow;
+            document.getElementById('thursdayStartTime').value = formattedNow;
+            document.getElementById('thursdayEndTime').value = formattedNow;
+            document.getElementById('fridayStartTime').value = formattedNow;
+            document.getElementById('fridayEndTime').value = formattedNow;
+            document.getElementById('saturdayStartTime').value = formattedNow;
+            document.getElementById('saturdayEndTime').value = formattedNow;
+            document.getElementById('sundayStartTime').value = formattedNow;
+            document.getElementById('sundayEndTime').value = formattedNow;
+        }
+
+        // Call the function to set default values
+        setDefaultDateTimeInputs();
+    </script>
+</body>
+</html>
